@@ -1,0 +1,143 @@
+
+header nav ul, header .d-flex {
+    display: flex;
+    align-items: center;
+  }
+
+.round-edge{
+    border-radius: 200px !important;
+}
+h1{font-weight: 800;font-size: 4rem;line-height: 1.1;}
+h1,p{margin: 30px 0px;}
+.row{align-items: center;}
+.form{
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 5px 20px;
+    border-left:5px solid #de8893;
+}
+.primary{background-color: #de8893;}
+.primary-text{color: #de8893;}
+.outline-primary{
+  border: 1px solid #de8893 !important;
+}
+.home{
+  margin: 100px auto;
+}
+  header .d-flex {
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+  @media screen and (max-width: 480px) {
+    header .d-flex {
+      flex-direction: column;
+      align-items: inherit;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    header .logo {
+      margin-bottom: 15px;
+    }
+  }
+  header .logo a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  header nav ul {
+    list-style: none;
+    column-gap: 25px;
+  }
+  @media screen and (max-width: 368px) {
+    header nav ul {
+      column-gap: 20px;
+    }
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 368px) {
+    header nav ul li a {
+      font-size: 0.938rem;
+    }
+  }
+  header nav ul li a:hover {
+    color: #de8893;
+  }
+  header nav ul li:nth-of-type(1) a {
+    color: #de8893;
+  }
+  header .content {
+    padding-top: 3em;
+    padding-bottom: 6em;
+  }
+  header .content h1 {
+    font-size: clamp(2rem, 1.5294rem + 2.6471vw, 4rem);
+    line-height: 1;
+    font-weight: 800;
+  }
+  header .content p {
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+    font-family: "Playfair Display", serif;
+    color: #de8893;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 big-2 big-2" "small-3 small-4 big-2 big-2";
+  }
+  @media screen and (max-width: 760px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "big-2 small-3" "small-4 big-1" "small-1 small-2";
+    }
+  }
+  @media screen and (max-width: 580px) {
+    main {
+      grid-template-areas: "big-2 big-2" "small-3 small-4" "big-1 big-1" "small-1 small-2";
+    }
+  }
+  main img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+  main .big-1 {
+    grid-area: big-1;
+  }
+  main .big-2 {
+    grid-area: big-2;
+  }
+  main .small-1 {
+    grid-area: small-1;
+  }
+  main .small-2 {
+    grid-area: small-2;
+  }
+  main .small-3 {
+    grid-area: small-3;
+  }
+  main .small-4 {
+    grid-area: small-4;
+  }
+  header .d-flex{
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    padding: 10px !important;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between !important;
+    align-items: center;
+    background-color: white;
+    z-index: 10;
+  }
+
+
+header .content{
+margin: 50px 0px;
+}
